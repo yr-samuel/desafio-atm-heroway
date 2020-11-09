@@ -12,12 +12,12 @@ function atualizaSaldo(saldo){
     }, 2000)
 }
 
-
 function limparVisor(){
     setTimeout(() => {
         visor.value = "";
     },2000)
 }
+
 function retirarNotas(valueInitial){
     let notas = valueInitial;
     billsDisplayer.innerText = "";
@@ -44,7 +44,6 @@ document.querySelectorAll(".line > .btn").forEach(btn => {
         visor.value += btn.innerHTML;
     })
 })
-
 
 limpar.addEventListener('click', () =>{
     visor.value = "";
