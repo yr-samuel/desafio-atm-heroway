@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+          <div class="header">
+            <h1>ATM</h1>
+            <div class="welcome">
+              <span>Bem vindo</span>
+              <span>João da Silva</span>
+            </div>
+          </div>
+          <div class="atm">
+            <div class="account">
+              <div class="item">
+                <span>Saldo</span>
+                <span>
+                  <span class="symbol">$</span> <span class="value" id="infinito">9999999 &infin;</span>
+                </span>
+              </div>
+              <div class="item">
+                <span>Notas disponíveis</span>
+                <span>
+                  <span class="bill">$ 100.00</span>
+                  <span class="bill">$ 50.00</span>
+                  <span class="bill">$ 20.00</span>
+                  <span class="bill">$ 10.00</span>
+                </span>
+              </div>
+              <div class="withdraw" id="boca">
+              </div>
+            </div>
+            <div class="action">
+              <input type="text" class="input" value="" readonly id="visor"/>
+              <div class="keyboard">
+                <div class="line">
+                  <div class="btn">1</div>
+                  <div class="btn">2</div>
+                  <div class="btn">3</div>
+                </div>
+                <div class="line">
+                  <div class="btn">4</div>
+                  <div class="btn">5</div>
+                  <div class="btn">6</div>
+                </div>
+                <div class="line">
+                  <div class="btn">7</div>
+                  <div class="btn">8</div>
+                  <div class="btn">9</div>
+                </div>
+                <div class="line">
+                  <div class="action gray" id="btn-limpar">Limpar</div>
+                  <div class="btn">0</div>
+                  <div class="action pink" id="confirmar">Confirmar</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fast-withdraw"></div>
+        </div>
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>

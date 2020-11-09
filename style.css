@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #333;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(31,48,77);
+  background: linear-gradient(130deg, rgba(31,48,77,1) 0%, rgba(60,69,83,1) 10%, rgba(201,178,210,1) 80%, rgba(173,191,195,1)  95%);
+}
+
+.wrapper > .main {
+  width: 80%;
+  min-width: 1024px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #0B3A97;
+  box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+}
+
+.main > .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.main > .header .welcome {
+  display:flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.main > .header .welcome > span:nth-child(1) {
+  color: #01B4F5;
+}
+
+.main > .header .welcome > span:nth-child(2) {
+  color: #fff;
+}
+
+.main > .header h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 900;
+}
+
+.main > .atm {
+  display: flex;
+}
+
+.main > .atm .account {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  margin-right: 40px;
+  position: relative;
+}
+
+.main > .atm .account .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main > .atm .account .withdraw {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  border: 3px solid #01B4F5;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+}
+
+.main > .atm .account .item .symbol {
+  color: #F6006B;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.main > .atm .account .item .value {
+  font-family: Arial;
+  font: 1.25rem Montserrat;
+  font-weight: 300;
+  padding-left: 8px;
+}
+.main > .atm .account .item .bill {
+  color: #0B3A97;
+  background-color: #fff;
+  margin: 3px 3px 0 3px;
+  padding: 3px 3px 0 3px;
+  border-radius: 3px;
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+}
+
+.main > .atm .account .item > span:nth-child(1) {
+    color: #01B4F5;
+    margin-bottom: 5px;
+}
+
+.main > .atm .account .item > span:nth-child(2) {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.main > .atm > .action {
+  flex: 7;
+}
+
+.main > .atm > .action .input {
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  border : 3px solid #01B4F5;
+  background-color: #fff;
+  font-size: 3rem;
+  font-family: Montserrat;
+  font-weight: 300;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+  color: #333;
+}
+
+.main > .atm > .action .keyboard .line {
+  display: flex;
+}
+
+.main > .atm > .action .keyboard .line > div {
+  flex: 4;
+  height: 80px;
+  background-color: #01B4F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+
+}
+.main > .atm > .action .keyboard .line > div:nth-child(1) {
+  margin: 20px 20px 0 0;
+}
+
+.main > .atm > .action .keyboard .line > div:nth-child(2) {
+  margin: 20px 0 0 0;
+}
+
+.main > .atm > .action .keyboard .line > div:nth-child(3) {
+  margin: 20px 0 0 20px;
+}
+
+.main > .atm > .action .keyboard .line > .action {
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.main > .atm > .action .keyboard .line > .action.pink {
+  background-color: #F6006B;
+}
+
+.main > .atm > .action .keyboard .line > .action.gray {
+ background-color: #abb3ce;
+}
